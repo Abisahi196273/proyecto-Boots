@@ -1,0 +1,31 @@
+xpath beautifulsoup
+
+/html/body/main/div/div/div[2]/div[2]/div/div[2]/div/div/div[2]
+/html/body/main/div/div/div[2]/div[2]/div/div[2]/div/div/div[3]/div/div[2]/div/div[2]/div/div/div/div/div[1]
+.css-4d8ot5
+/html/body/main/div/div/div[2]/div[2]/div/div[2]/div/div/div[2]/div/div[1]/div/div[2]/div/div/div/div[2]/div[2]
+MuiCardContent-root jss61 css-1qw96cp
+#vesselDetails_voyageInfoSection > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1)
+
+
+/html/body/main/div/div/div[2]/div[2]/header/div/div[1]/div/div[2]/p
+xpth imo
+//*[@id="imo"]
+//*[@id="imo"]
+
+PARA EXTRAER DATA 
+/html/body/main/div/div/div[2]/div[2]/div/div[2]/div/div/div[2]/div/div[1]/div/div[2]/div/div/div
+#vesselDetails_voyageInfoSection > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1)
+/html/body/main/div/div/div[2]/div[2]/div/div[2]/div/div/div[3]/div/div[2]/div/div[2]/div/div/div/div/div[1]
+.css-4d8ot5
+MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-true css-4d8ot5
+
+/html/body/main/div/div/div[2]/div[2]/div/div[2]/div/div/div[2]
+.MuiGrid-spacing-xs-4 > div:nth-child(2)
+
+
+/html/body/main/div/div/div[2]/div[2]/div/div[2]/div/div/div[2]
+.MuiGrid-spacing-xs-4 > div:nth-child(2)
+
+
+

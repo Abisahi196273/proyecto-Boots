@@ -1,0 +1,88 @@
+#vesselDetails_latestPositionSection > div:nth-child(1) > div:nth-child(1) > span:nth-child(1)
+body > div > div.jss40 > div > div.jss42.jss49 > div > div > div
+
+//*[@id="vesselDetails_latestPositionSection"]/div[2]/div/div/div/div/div[1]
+css
+body > div > div.jss14 > div > div.jss119 > div > div.jss128 > a > div > div.MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-11.css-tywlkx > div > div.jss147
+/html/body/div/div[3]/div/div[3]
+css
+body > div > div.jss14 > div > div.jss119
+document.querySelector("body > div > div.jss14 > div > div.jss119")
+
+xpath
+//*[@id="vesselDetails_latestPositionSection"]/div[2]/div/div/div/div/div[1]
+
+
+add csss
+#addNotesBtn
+#MTScrollArea_2 > div:nth-child(1) > div > ul > div:nth-child(5) > div > span
+//*[@id="MTScrollArea_2"]/div[1]/div/ul/div[5]/div/span
+#General-content > div
+
+#vesselDetails_voyageInfoSection > div.MuiCollapse-root.MuiCollapse-vertical.MuiCollapse-entered.css-c4sutr > div > div > div
+
+imo
+/html/body/div/div[3]/div/div[4]/div/div[10]/span
+div.MuiChip-root:nth-child(11) > span:nth-child(1)
+/html/body/main/div/div/div[2]/div[2]/header/div/div[1]/div/div[2]/p/span
+.jss38
+html.wf-opensans-n3-active.wf-opensans-n4-active.wf-opensans-i4-active.wf-opensans-n6-active.wf-opensans-n7-active.wf-opensans-n8-active.wf-robotocondensed-n3-active.wf-robotocondensed-n4-active.wf-robotocondensed-n7-active.wf-notoserif-n4-active.wf-notoserif-i4-active.wf-notoserif-n6-active.wf-active body main div#app div.jss1 div.jss2 div.jss15 header#vesselDetailsHeader.MuiPaper-root.MuiPaper-elevation.MuiPaper-elevation4.MuiAppBar-root.MuiAppBar-colorSecondary.MuiAppBar-positionSticky.jss16.jss18.css-vkuug0 div.MuiGrid-root.MuiGrid-container.css-1tsmbea div.MuiGrid-root.MuiGrid-item.MuiGrid-grid-sm-true.css-qc7bc1 div.MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-1.css-11hlwqc div.MuiGrid-root.MuiGrid-item.MuiGrid-grid-sm-true.css-qc7bc1 p.MuiTypography-root.MuiTypography-body2.jss36.css-14tmp0 span.jss38
+photografer
+/html/body/div/div[3]/div/div[4]/div/div[12]/span
+div.MuiChip-root:nth-child(13) > span:nth-child(1)
+head > meta:nth-child(125)
+head > meta:nth-child(125)
+head > meta:nth-child(125)
+head > meta:nth-child
+button.MuiTab-root:nth-child(1)
+html.wf-opensans-n4-active.wf-opensans-n6-active.wf-opensans-n7-active.wf-robotocondensed-n4-active.wf-robotocondensed-n7-active.wf-opensans-i4-active.wf-robotocondensed-n3-active.wf-opensans-n3-active.wf-notoserif-n4-active.wf-notoserif-n6-active.wf-notoserif-i4-active.wf-opensans-n8-active.wf-active head title
+#searchMT
+div.MuiGrid-grid-sm-true:nth-child(1) > div:nth-child(1)
+html.wf-opensans-n3-active.wf-opensans-n4-active.wf-opensans-i4-active.wf-opensans-n6-active.wf-opensans-n7-active.wf-opensans-n8-active.wf-robotocondensed-n3-active.wf-robotocondensed-n4-active.wf-robotocondensed-n7-active.wf-notoserif-n4-active.wf-notoserif-i4-active.wf-notoserif-n6-active.wf-active head meta
+/html/body/div/div[3]/div/div[4]/div/div[10]/span
+div.MuiChip-root:nth-child(11) > span:nth-child(1)
+
+/html/head/meta[15]
+*************
+https://www.youtube.com/watch?v=UClHOT_7hok 
+*********
+ta_inf = ((soup_i.find_all('table',{'class':'table table-hover text-left'})))
+        #print(eta_inf)
+        index=1
+        try:
+                while index < len(eta_inf):
+                        #print(index)
+                        if (eta_inf[index].find_all('td')[1] != 'Photographers' or eta_inf[index].find_all('td')[1] != 'Lights'): 
+                                eta = session.get(SEARCH_URL + eta_inf[index].find_all('td')[0].find('a').get('href'),headers=headers,proxies=PROXIES,auth=AUTH)
+                                soup=BeautifulSoup(eta.text, 'lxml')
+                                
+                                imo = soup.find_all('span',{'class':'jss38'}).find('p').string.strip()
+                                eta_q = soup.find('title').string.split(':')[1].split(',')[0].strip()
+                                title = eta_q.split('-')
+                                count=0
+                                name=r
+                                new_name=''
+                                tipo=''
+                                imo=''
+                                while count < len(title):
+                                    if count == 0: # NOMBRE (TIPO)
+                                        tmp_data=title[count].split('(')
+                                        new_name = tmp_data[0].strip()
+                                        tipo = tmp_data[1].replace(')','').strip()
+                                    if count == 1: # IMO
+                                        imo = title[count].replace('IMO','').strip()
+                                        #print(imo)
+                                    count+=1
+                        eta_info=soup.find_all('div',{'class':'row'})
+                        for info in eta_info:
+                                print(info)
+                                field=info.find('span',text=True, recursive=False)
+                                
+                                value=info.find('span').find('b').string
+                                print(value)
+        except:
+         print("Data not found")
+          
+for buque in buques:
+    	print(buque)
+

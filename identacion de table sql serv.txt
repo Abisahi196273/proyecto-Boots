@@ -1,0 +1,19 @@
+
+                                def buque (SEARCH_URL):
+                                    eta = session.get(SEARCH_URL + eta_inf[index].find_all('td')[0].find('a').get('href'),headers=headers,proxies=PROXIES,auth=AUTH)
+                                    soup=BeautifulSoup(eta.text, 'lxml')
+                                    buquex = {
+                                        'buques':soup.select_one('a.#searchMarineTraffic').text.strip().replace('\n',''),
+                                        'imo':soup.select_one('p.MuiTypography-root:nth-child(2)').text.strip().replace('\n',''),
+                                        'Container Ship':soup.select_one('.jss35').text.strip().replace('\n',''),
+                                        'eta':soup.select_one('div.MuiTypography-root:nth-child(5)').text.strip().replace('\n','')
+
+                                    }
+                                    print(buquex)
+                                    return buque
+
+
+  ALTER TABLE TBL_BUQUES_MARINE_TRAFFIC ALTER COLUMN TIPO varchar(2048) COLLATE Modern_Spanish_CI_AI
+
+
+
